@@ -59,7 +59,7 @@ function App() {
             title="Редактировать профиль"
             text="Сохранить"
         >
-          <lebel className="popup__indent">
+          <label className="popup__indent">
             <input type="text"
                id="profileName-input"
                required
@@ -69,8 +69,8 @@ function App() {
                name="profileName"
                className="popup__element popup__element_profile popup__element_add_name"/>
             <span className="popup__error" id="profileName-input-error"></span>
-          </lebel>
-          <lebel className="popup__indent">
+          </label>
+          <label className="popup__indent">
             <input type="text"
                  id="profileProfession-input"
                  required
@@ -80,7 +80,7 @@ function App() {
                  name="profileProfession"
                  className="popup__element popup__element_profile popup__element_add_profession"/>
             <span className="popup__error" id="profileProfession-input-error"></span>
-          </lebel>
+          </label>
         </PopupWithForm>
 
         <PopupWithForm
@@ -91,7 +91,7 @@ function App() {
             title="Новое место"
             text="Создать"
         >
-          <lebel className="popup__indent">
+          <label className="popup__indent">
             <input type="text"
                  id="name-input"
                  required
@@ -101,8 +101,8 @@ function App() {
                  name="name"
                  className="popup__element popup__element_location popup__element_add_heading"/>
             <span className="popup__error" id="name-input-error"></span>
-          </lebel>
-          <lebel className="popup__indent">
+          </label>
+          <label className="popup__indent">
             <input type="url"
                    id="link-input"
                    required
@@ -110,7 +110,7 @@ function App() {
                    name="link"
                    className="popup__element popup__element_location popup__element_add_link"/>
               <span className="popup__error" id="link-input-error"></span>
-          </lebel>
+          </label>
           </PopupWithForm>
 
         <PopupWithForm
@@ -121,7 +121,7 @@ function App() {
             title="Обновить аватар"
             text="Сохранить"
         >
-          <lebel className="popup__indent">
+          <label className="popup__indent">
             <input type="url"
                    id="link-avatar"
                    required
@@ -129,7 +129,7 @@ function App() {
                    name="link"
                    className="popup__element popup__element_avatar popup__element_add_link"/>
               <span className="popup__error" id="link-avatar-error"></span>
-          </lebel>
+          </label>
         </PopupWithForm>
 
         <PopupWithForm

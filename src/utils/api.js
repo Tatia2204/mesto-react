@@ -1,5 +1,3 @@
-import Main from "../components/Main";
-
 class Api {
     constructor(options) {
         this._url = options.baseUrl;
@@ -12,7 +10,7 @@ class Api {
             method: 'GET',
             headers: this._headers
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //добавление новой карточки
@@ -25,11 +23,11 @@ class Api {
                 link: data.link
             })
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //проверка ответа
-    _checkRequest(res) {
+    _checkResponse(res) {
         {
             if (res.ok) {
                 return res.json();
@@ -44,7 +42,7 @@ class Api {
             method: 'GET',
             headers: this._headers
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //изменение инфы профеля
@@ -57,7 +55,7 @@ class Api {
                 about: data.profileProfession
             })
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //изменение аватара профеля
@@ -69,7 +67,7 @@ class Api {
                 avatar: data.link
             })
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //добавить лайк
@@ -78,7 +76,7 @@ class Api {
             method: 'PUT',
             headers: this._headers
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //удалить лайк
@@ -87,7 +85,7 @@ class Api {
             method: 'DELETE',
             headers: this._headers
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
 
     //удалить карточки
@@ -96,9 +94,9 @@ class Api {
             method: 'DELETE',
             headers: this._headers
         })
-            .then(this._checkRequest);
+            .then(this._checkResponse);
     }
-    }
+}
 
 const api = new Api({
     baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-43',

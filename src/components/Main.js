@@ -32,20 +32,28 @@ function Main (props) {
         <main className="content">
             <section className="profile">
                 <div className="profile__container">
-                    <button aria-label="Поменять аватар" className="profile__avatar-button"
-                            onClick={props.onEditAvatar}>
+                    <button
+                        aria-label="Поменять аватар"
+                        className="profile__avatar-button"
+                        onClick={props.onEditAvatar}>
                     </button>
                     <img src={userAvatar} alt="фото" className="profile__avatar"/>
                 </div>
                 <div className="profile__info">
                     <h1 className="profile__name">{userName}</h1>
-                    <button aria-label="Перейти к изменению профеля" className="link profile__info-edit" type="button"
-                            onClick={props.onEditProfile}>
+                    <button
+                        aria-label="Перейти к изменению профеля"
+                        className="link profile__info-edit"
+                        type="button"
+                        onClick={props.onEditProfile}>
                     </button>
                     <p className="profile__profession">{userDescription}</p>
                 </div>
-                <button aria-label="Перейти к добавлению информации" className="link profile__info-add"
-                        type="button" onClick={props.onAddPlace}>
+                <button
+                    aria-label="Перейти к добавлению информации"
+                    className="link profile__info-add"
+                    type="button"
+                    onClick={props.onAddPlace}>
                 </button>
             </section>
 
