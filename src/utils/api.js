@@ -1,7 +1,7 @@
 class Api {
     constructor(options) {
         this._url = options.baseUrl;
-        this._headers = options. headers;
+        this._headers = options.headers;
     }
 
     //загрузка карточек
@@ -28,15 +28,13 @@ class Api {
 
     //проверка ответа
     _checkResponse(res) {
-        {
             if (res.ok) {
                 return res.json();
             }
             return Promise.reject(`Ошибка: ${res.status}`);
         }
-    }
 
-    //запрос инфы о профеле
+    //запрос инфы о профиле
     getProfileInfo() {
         return fetch(`${this._url}/users/me`, {
             method: 'GET',
@@ -64,28 +62,28 @@ class Api {
             method: 'PATCH',
             headers: this._headers,
             body: JSON.stringify({
-                avatar: data.link
+                avatar: data.avatar
             })
         })
             .then(this._checkResponse);
     }
 
-    //добавить лайк
-    addLike(_id) {
-        return fetch(`${this._url}/cards/${_id}/likes`, {
-            method: 'PUT',
-            headers: this._headers
-        })
-            .then(this._checkResponse);
-    }
+    //проверить лайк
+    changeLikeCardStatus(_id, isLiked) {
 
-    //удалить лайк
-    deleteLike(_id) {
-        return fetch(`${this._url}/cards/${_id}/likes`, {
-            method: 'DELETE',
-            headers: this._headers
-        })
-            .then(this._checkResponse);
+        if(isLiked) {
+            return fetch(`${this._url}/cards/${_id}/likes`, {
+                method: 'PUT',
+                headers: this._headers
+            })
+                .then(this._checkResponse);
+        } else {
+            return fetch(`${this._url}/cards/${_id}/likes`, {
+                method: 'DELETE',
+                headers: this._headers
+            })
+                .then(this._checkResponse);
+        }
     }
 
     //удалить карточки

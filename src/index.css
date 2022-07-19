@@ -9,6 +9,8 @@
 @import url(./blocks/element/__location/element__location.css);
 @import url(./blocks/element/__mask-group/element__mask-group.css);
 @import url(./blocks/element/__remove/element__remove.css);
+@import url(./blocks/element/__remove/_hidden/element__remove_hidden.css);
+@import url(./blocks/element/__remove/_visible/element__remove_visible.css);
 @import url(./blocks/elements/elements.css);
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/header/header.css);

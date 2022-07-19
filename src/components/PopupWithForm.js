@@ -1,6 +1,6 @@
 import React from "react";
 
-function PopupWithForm({isOpen, popup, onClose, name, children, text, title}) {
+function PopupWithForm({isOpen, popup, onClose, name, children, text, title, onSubmit}) {
 
     const popupIsOpen = isOpen ? 'popup_opened' : '';
     return (
@@ -9,7 +9,7 @@ function PopupWithForm({isOpen, popup, onClose, name, children, text, title}) {
                 <button aria-label="Закрыть окно" className="link popup__close" type="button"
                         onClick={onClose}>
                 </button>
-                <form name={`${name}`} noValidate className="popup__content">
+                <form name={`${name}`} noValidate className="popup__content" onSubmit={onSubmit}>
                     <h3 className="popup__title">{title}</h3>
                         {children}
                     <button className="popup__save" type="submit">{text}</button>
