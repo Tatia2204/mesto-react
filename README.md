@@ -19,7 +19,7 @@
 **Технологии:**
 * HTML5;
 * CSS3:
-** Flexbox;
+*Flexbox;
 Grid Layout;
 Positioning;
 Adaptive UI;
