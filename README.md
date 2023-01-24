@@ -48,3 +48,4 @@
 ### Установка и запуск приложения:
 
 Клонировать репозиторий:
+git clone https://github.com/ia-stepanov/mesto-react.git
