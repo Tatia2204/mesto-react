@@ -48,4 +48,18 @@
 ### Установка и запуск приложения:
 
 Клонировать репозиторий:
-git clone https://github.com/ia-stepanov/mesto-react.git
+git clone https://github.com/Tatia2204/mesto-react.git
+
+Установить зависимости:
+npm install
+
+Запустить приложение:
+npm run start
+
+### Языки:
+
+* JavaScript
+
+### Библиотеки:
+
+* ReactJS
