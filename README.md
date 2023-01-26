@@ -64,4 +64,16 @@ npm run start
 * [Макет3](https://www.figma.com/file/kRVLKwYG3d1HGLvh7JFWRT/JavaScript.-Sprint-6?node-id=0%3A1);
 * [Макет4](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?node-id=0%3A1).
 
+### Чеклисты Проектной работы:
 
+* [Чеклист1](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-4/index.html);
+* [Чеклист2](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-5/index.html);
+* [Чеклист3](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-6/index.html);
+* [Чеклист4](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-7/index.html);
+* [Чеклист5](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-8/index.html);
+* [Чеклист6](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-9/index.html);
+* [Чеклист7](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-10/index.html);
+* [Чеклист8](https://code.s3.yandex.net/web-developer/checklists/new-program/checklist-11/index.html).
+
+### Ссылка на сайт:
+https://tatia2204.github.io/react-mesto-auth/
